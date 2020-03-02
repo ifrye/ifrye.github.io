@@ -39,7 +39,7 @@
             </nav>
         </div>
         <div class="row">
-            <nav class="col-sm-3 col-4" id="myScrollspy">
+            <nav class="col-sm-3 col-4 sidebar bg-col" id="myScrollspy">
               <ul class="nav nav-pills flex-column top-pad-side">
                 <li class="nav-item">
                   <a class="nav-link active link-color" href="#section1">What is the Circle of Fifths?</a>
@@ -67,7 +67,7 @@
             <p>According to Wikipedia, the Circle of Fifths is:</p>
 
             <blockquote cite="https://en.wikipedia.org/wiki/Circle_of_fifths">
-            In music theory, the circle of fifths (or circle of fourths) is the relationship among the 12 tones of the chromatic scale, their corresponding key signatures, and the associated major and minor keys.
+            <i>In music theory, the circle of fifths (or circle of fourths) is the relationship among the 12 tones of the chromatic scale, their corresponding key signatures, and the associated major and minor keys.</i>
             </blockquote>
 
             <p>The Circle of Fifths is a concept in music theory that allows people to visualize all of the diatonic scales of western music theory in a circle. It looks something like this:</p>
@@ -76,7 +76,8 @@
               <source media="(min-width: 465px)" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Circle_of_fifths_deluxe_4.svg/1024px-Circle_of_fifths_deluxe_4.svg.png">
               <img  src="https://www.musikalessons.com/blog/wp-content/uploads/2017/07/fifths.png" alt="Circle of Fifths" syle="width:auto;" class="center">
             </picture>
-
+            <br>
+            <br>
 
             <p>This probably looks pretty daunting, but don't worry! We will break it down and you will get it in no time!</p>
             </div>
@@ -98,8 +99,10 @@
 
             <p>To better picture this, on the image of the keyboard below, start at C and trace your way up the scale using the intervals stated above. From C, you go up a whole step to D, then up another whole step to E, then a half step to F and so on.  Try it!</p>
 
-            <img src="https://cdn.instructables.com/FEP/TIWZ/GITHPY3O/FEPTIWZGITHPY3O.LARGE.gif?auto=webp&frame=1">
-            </div>       
+            <img src="https://cdn.instructables.com/FEP/TIWZ/GITHPY3O/FEPTIWZGITHPY3O.LARGE.gif?auto=webp&frame=1" class="pic">
+            </div> 
+            <br>
+            <br>      
 
             <div id="section3" > 
             <p>Notice that C major hits all of the white keys and no black keys indicating that C has no sharps or flats. We can use this interval sequence to create a major scale that starts on any key.</p>
@@ -111,8 +114,10 @@
 
             <p>Now, if we start at C again and go leftwards around the cirlce, there are different letters in red.  Each letter, in this case, is a fifth below the previous letter instead of a fifth above. Go back to the keyboard, start at the high C and count five notes to the left in the major scale.  You will end up in the key of F.</p>
 
-            <img src="https://cdn.instructables.com/FEP/TIWZ/GITHPY3O/FEPTIWZGITHPY3O.LARGE.gif?auto=webp&frame=1">
+            <img src="https://cdn.instructables.com/FEP/TIWZ/GITHPY3O/FEPTIWZGITHPY3O.LARGE.gif?auto=webp&frame=1" class="pic">
             </div>
+            <br>
+            <br>
 
             <div id="section4" >
             <p>Also notice that the amount of flats are increasing as you move along the left side of the cirle from C. C has zero flats, F has one flat, Bb has 2 flats and so on goin all the way up to Cb.</p>
@@ -131,7 +136,10 @@
             <br>
             <br>
 
-            <img src="https://www.piano-keyboard-guide.com/wp-content/uploads/2015/04/a-minor-scale-treble-clef.png"/>
+            <img src="https://www.piano-keyboard-guide.com/wp-content/uploads/2015/04/a-minor-scale-treble-clef.png" class="pic-2"/>
+
+            <br>
+            <br>
 
             <div id="section5" >   
             <p>As you can see, the Circle of Fifths includes all of the major and minor scales used in western music. If you want to research minor scales more, follow <a href="https://en.wikipedia.org/wiki/Minor_scale">this link</a></p>
@@ -199,17 +207,59 @@
 
 .col-sm-9{
     padding-right:100px;
+    margin-left: 300px;
+    background-color: #d9dcde91;
 }
 
 .col-sm-3{
     max-width: 20%;
-    background-color: #f5f5f5;
+}
+
+.pic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: black solid;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.pic-2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: black solid;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     color: #212529;
     background-color: #b1d7ff;
     font-weight: bold;
+}
+
+.bg-col{
+  background-color: #f5f5f5;
+}
+
+.row {
+  margin-right: -151px;
+}
+
+.sidebar{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    border-right: 3px solid #8D8C8D;
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+    background-color: #f5f5f5;
 }
 
 .link-color{
